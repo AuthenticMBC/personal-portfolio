@@ -18,8 +18,7 @@
             -webkit-font-smoothing: antialiased;
             padding: 10vh 15vw;
             color: #121314;
-            text-align: justify;
-            word-break: keep-all;
+
         }
 
         h1 {
@@ -39,7 +38,6 @@
             text-decoration: none;
             white-space: nowrap;
             color: gray;
-            /* position: relative; */
         }
 
         a:hover {
@@ -48,13 +46,37 @@
             text-underline-position: under;
         }
 
-        li {
-            font-size: 1.4rem;
-            font-weight: normal;
-        }
+
 
         .mail {
             margin-top: 5%;
+        }
+
+        @media only screen and (max-width: 500px) {
+            body {
+                text-align: none;
+                word-break: none;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            li {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media only screen and (min-width: 501px) {
+            body {
+                text-align: justify;
+                word-break: keep-all;
+            }
+
+            li {
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
         }
     </style>
 </head>
@@ -73,7 +95,7 @@
 
     <p>Here some technologies I have been working with :</p>
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-3">
             <ul>
                 <li>Javascript ES6+</li>
                 <li>React.js</li>
@@ -82,7 +104,7 @@
             </ul>
 
         </div>
-        <div class="col-lg-3">
+        <div class="col-3">
             <ul>
                 <li>Python</li>
                 <li>C/C++</li>
